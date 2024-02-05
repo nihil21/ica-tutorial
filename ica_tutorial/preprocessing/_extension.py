@@ -1,4 +1,4 @@
-"""Function performing the extension step of an EMG signal.
+"""Function performing the extension step of convolutive ICA.
 
 
 Copyright 2023 Mattia Orlandi
