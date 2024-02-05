@@ -24,8 +24,8 @@ Then, **from within the virtual environment**, the required packages can be inst
 pip install -r requirements.txt
 ```
 
-## Author
-- [Mattia Orlandi](https://www.unibo.it/sitoweb/mattia.orlandi/en)
-
 ## License
 All files are released under the Apache-2.0 license (see [`LICENSE`](https://github.com/pulp-bio/unibo-tbiocas24-dataset/blob/main/LICENSE)).
+
+## TO-DOs
+[] complete tutorial with non-stationary conditions
