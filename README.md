@@ -5,7 +5,7 @@ Tutorial on Blind Source Separation (BSS) and Independent Component Analysis (IC
 
 The repository is structured as follows:
 
-- the [`Tutorial on ICA.ipynb`](https://github.com/nihil21/ica-tutorial/blob/main/Tutorial on ICA.ipynb) Jupyter notebook contains the actual tutorial;
+- the [`Tutorial on ICA.ipynb`](https://github.com/nihil21/ica-tutorial/blob/main/Tutorial+on+ICA.ipynb) Jupyter notebook contains the actual tutorial;
 - the [`ica_tutorial`](https://github.com/nihil21/ica-tutorial/blob/main/ica_tutorial) folder contains the utility code used in the notebook:
     - the [`ica`](https://github.com/nihil21/ica-tutorial/blob/main/ica_tutorial/ica) package contains the implementation of ICA algorithms (i.e., FastICA and EFICA); 
     - the [`preprocessing`](https://github.com/nihil21/ica-tutorial/blob/main/ica_tutorial/preprocessing) package contains common preprocessing steps (e.g., filtering and whitening);
