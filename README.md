@@ -9,6 +9,7 @@ The repository is structured as follows:
 - the [`ica_tutorial`](https://github.com/nihil21/ica-tutorial/blob/main/ica_tutorial) folder contains the utility code used in the notebook:
     - the [`ica`](https://github.com/nihil21/ica-tutorial/blob/main/ica_tutorial/ica) package contains the implementation of ICA algorithms (i.e., FastICA and EFICA); 
     - the [`preprocessing`](https://github.com/nihil21/ica-tutorial/blob/main/ica_tutorial/preprocessing) package contains common preprocessing steps (e.g., filtering and whitening);
+    - the [`rls`](https://github.com/nihil21/ica-tutorial/blob/main/ica_tutorial/rls) package contains the implementation of Recursive Least Squares (RLS) algorithms for ICA and whitneing;
     - the [`plotting`](https://github.com/nihil21/ica-tutorial/blob/main/ica_tutorial/plotting) package contains functions for plotting;
     - the [`utils`](https://github.com/nihil21/ica-tutorial/blob/main/ica_tutorial/utils) package contains utility functions.
 
