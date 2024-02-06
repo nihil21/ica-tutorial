@@ -17,7 +17,6 @@ limitations under the License.
 """
 
 from ._ng_rls import NatGradRLS, NatGradRLSPreWhite
-from ._orica import ORICA
 from ._pastd import PASTdW
 
-__all__ = ["NatGradRLS", "NatGradRLSPreWhite", "ORICA", "PASTdW"]
+__all__ = ["NatGradRLS", "NatGradRLSPreWhite", "PASTdW"]

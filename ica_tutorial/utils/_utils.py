@@ -54,6 +54,7 @@ def eigendecomposition(m: torch.Tensor) -> tuple[torch.Tensor, torch.Tensor]:
     if torch.any(degenerate_idx):
         warnings.warn(f"Some eigenvalues are smaller than epsilon ({eps:.3e}).")
     eig_vals[degenerate_idx] = eps
+    eig_vecs *= torch.sign(eig_vecs[0])  # guarantee consistent sign
 
     sort_idx = torch.argsort(eig_vals, descending=True)
     eig_vals, eig_vecs = eig_vals[sort_idx], eig_vecs[:, sort_idx]
