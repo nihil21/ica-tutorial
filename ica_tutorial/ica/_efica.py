@@ -80,7 +80,7 @@ class EFICA(ICA):
         Maximum n. of iterations for symmetric FastICA.
     max_iter_ft : int, default=50
         Maximum n. of iterations for fine-tuning.
-    device : device or str or None, default=None
+    device : device or str, default="cpu"
         Torch device.
     seed : int or None, default=None
         Seed for the internal PRNG.
@@ -101,7 +101,7 @@ class EFICA(ICA):
         Maximum n. of iterations for symmetric FastICA.
     _max_iter_ft : int
         Maximum n. of iterations for fine-tuning.
-    _device : device or None
+    _device : device
         Torch device.
     """
 
@@ -115,7 +115,7 @@ class EFICA(ICA):
         conv_th_ft: float = 1e-5,
         max_iter: int = 200,
         max_iter_ft: int = 50,
-        device: torch.device | str | None = None,
+        device: torch.device | str = "cpu",
         seed: int | None = None,
         **kwargs,
     ):

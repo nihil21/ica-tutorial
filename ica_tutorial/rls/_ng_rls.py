@@ -63,14 +63,14 @@ class NatGradRLSPreWhite:
         Initial W matrix with shape (n_components, n_channels).
     p_mtx_init : ndarray or Tensor
         Initial P matrix with shape (n_components, n_components).
-    device : device or str or None, default=None
+    device : device or str, default="cpu"
         Torch device.
 
     Attributes
     ----------
     _g_func : Callable[[Tensor], Tensor]
         Optimization function.
-    _device : device or None
+    _device : device
         Torch device.
     _p_mtx : Tensor
         P matrix with shape (n_components, n_components).
@@ -83,7 +83,7 @@ class NatGradRLSPreWhite:
         kurtosis: str,
         w_mtx_init: np.ndarray | torch.Tensor,
         p_mtx_init: np.ndarray | torch.Tensor,
-        device: torch.device | str | None = None,
+        device: torch.device | str = "cpu",
     ) -> None:
         assert kurtosis in (
             "super",
@@ -172,14 +172,14 @@ class NatGradRLS:
         Initial P matrix with shape (n_components, n_components).
     autocorr_mtx_init : ndarray or Tensor or None, default=None
         Initial autocorrelation matrix with shape (n_channels, n_channels).
-    device : device or str or None, default=None
+    device : device or str, default="cpu"
         Torch device.
 
     Attributes
     ----------
     _g_func : Callable[[Tensor], Tensor]
         Optimization function.
-    _device : device or None
+    _device : device
         Torch device.
     _p_mtx : Tensor
         P matrix with shape (n_components, n_components).

@@ -41,12 +41,12 @@ class PASTdW:
         Initial matrix of eigenvectors with shape (n_channels, n_components).
     eig_vals_init : ndarray or Tensor
         Initial vector of eigenvalues with shape (n_components,).
-    device : device or str or None, default=None
+    device : device or str, default="cpu"
         Torch device.
 
     Attributes
     ----------
-    _device : device or None
+    _device : device
         Torch device.
     _n : int
         Number of iterations.
@@ -58,7 +58,7 @@ class PASTdW:
         n_pcs: int,
         eig_vecs_init: np.ndarray | torch.Tensor,
         eig_vals_init: np.ndarray | torch.Tensor,
-        device: torch.device | str | None = None,
+        device: torch.device | str = "cpu",
     ) -> None:
         self._beta = beta
         self._n_pcs = n_pcs

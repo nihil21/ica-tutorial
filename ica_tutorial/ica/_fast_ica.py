@@ -55,7 +55,7 @@ class FastICA(ICA):
         Maximum n. of iterations.
     do_saddle_test : bool, default=False
         Whether to perform the test of saddle points (relevant for symmetric strategy).
-    device : device or str or None, default=None
+    device : device or str, default="cpu"
         Torch device.
     seed : int or None, default=None
         Seed for the internal PRNG.
@@ -76,7 +76,7 @@ class FastICA(ICA):
         Maximum n. of iterations.
     _do_saddle_test : bool
         Whether to perform the test of saddle points (relevant for symmetric strategy).
-    _device : device or None
+    _device : device
         Torch device.
     """
 
@@ -90,7 +90,7 @@ class FastICA(ICA):
         conv_th: float = 1e-4,
         max_iter: int = 200,
         do_saddle_test: bool = False,
-        device: torch.device | str | None = None,
+        device: torch.device | str = "cpu",
         seed: int | None = None,
         **kwargs,
     ):
